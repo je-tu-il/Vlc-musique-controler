@@ -20,3 +20,7 @@ Informations Visuelles :
 Ergonomie :
   Raccourci Global : Invoquez l'interface à tout moment avec Alt + é (configurable).
   Positionnement Mémoire : Déplacez la fenêtre où vous voulez sur l'écran ; elle mémorisera sa position lors de la prochaine réapparition.
+
+
+<img width="1919" height="1079" alt="Capture d&#39;écran 2025-11-23 212510" src="https://github.com/user-attachments/assets/3f277a22-f712-40e8-a23f-595a9710709a" />
+<img width="1919" height="1079" alt="Capture d&#39;écran 2025-11-23 212523" src="https://github.com/user-attachments/assets/8ba9e661-60db-47f6-9dec-07f3e64cea6a" />
