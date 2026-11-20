@@ -1,0 +1,21 @@
+{
+    "hotkey": "alt+quotedbl",
+    "hide_delay": 3500,
+    "max_opacity": 0.93,
+    "theme": "Dark",
+    "color_theme": "blue",
+    "accent_color": "#af52de",
+    "show_progress": true,
+    "show_controls": true,
+    "show_cover": true,
+    "show_speed": true,
+    "marquee_title": true,
+    "vlc_host": "http://127.0.0.1:8080",
+    "vlc_password": "vlc",
+    "position_x": 3270,
+    "position_y": 9,
+    "auto_show_on_change": true,
+    "pin_to_desktop": false,
+    "start_menu_shortcut": true,
+    "run_on_startup": true
+}
