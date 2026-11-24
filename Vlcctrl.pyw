@@ -576,6 +576,7 @@ class SettingsWindow(ctk.CTkToplevel):
         self.inner.pack(fill="both", expand=True, padx=1, pady=1)
 
         self._build_ui()
+        self.bind("<Escape>", lambda _event: self.destroy())
         self._center_window(master)
         self.focus_force()
 
@@ -598,9 +599,9 @@ class SettingsWindow(ctk.CTkToplevel):
         # En-tête
         header = ctk.CTkFrame(p, fg_color="transparent")
         header.grid(row=0, column=0, columnspan=2, sticky="ew", pady=(16, 8))
-        ctk.CTkLabel(header, text="⚙  Paramètres", font=FONT_TITLE, text_color=PALETTE["text_primary"]).pack(side="left", padx=20)
+        ctk.CTkLabel(header, text="Réglages du lecteur", font=FONT_TITLE, text_color=PALETTE["text_primary"]).pack(side="left", padx=20)
 
-        btn_close = ctk.CTkButton(header, text="✕", width=32, height=32, corner_radius=16,
+        btn_close = ctk.CTkButton(header, text="✕", width=40, height=40, corner_radius=12,
                                   fg_color="transparent", hover_color=PALETTE["bg_hover"],
                                   text_color=PALETTE["text_secondary"], font=("Segoe UI", 12, "bold"),
                                   command=self.destroy)
@@ -699,7 +700,7 @@ class SettingsWindow(ctk.CTkToplevel):
             r_start += 1
 
         # Bouton enregistrer
-        self.btn_save = ctk.CTkButton(p, text="Enregistrer & Appliquer", font=FONT_BTN,
+        self.btn_save = ctk.CTkButton(p, text="Appliquer les réglages", font=FONT_BTN,
                                       fg_color=self.config["accent_color"], hover_color=self.config["accent_color"],
                                       height=36, corner_radius=12, command=self._save)
         self.btn_save.grid(row=2, column=0, columnspan=2, padx=20, pady=(12, 18), sticky="ew")
